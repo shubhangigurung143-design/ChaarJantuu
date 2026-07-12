@@ -1,0 +1,123 @@
+/* ===========================
+   PROJECT S4 - CHAARJANTUU
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#090014;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:420px;
+    text-align:center;
+}
+
+.logo{
+    color:#b86cff;
+    font-size:18px;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(184,108,255,.35);
+    border-radius:20px;
+    padding:35px 25px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 30px rgba(184,108,255,.25);
+}
+
+h1{
+    color:#d8b5ff;
+    margin-bottom:20px;
+}
+
+.member{
+    font-size:28px;
+    color:#ffffff;
+    margin:18px 0;
+    font-weight:bold;
+}
+
+.status{
+    color:#72ffae;
+    font-size:18px;
+    margin:15px 0;
+}
+
+.quote{
+    margin-top:20px;
+    color:#cfcfcf;
+    font-style:italic;
+    line-height:1.6;
+}
+
+.loading{
+    width:100%;
+    height:12px;
+    background:#2c2342;
+    border-radius:100px;
+    overflow:hidden;
+    margin:25px 0;
+}
+
+.bar{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,#8f4fff,#d77fff);
+    animation:load 3s forwards;
+}
+
+@keyframes load{
+    from{width:0%;}
+    to{width:100%;}
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 35px;
+    background:#9b4dff;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#b86cff;
+    transform:scale(1.05);
+}
+
+.footer{
+    margin-top:30px;
+    font-size:12px;
+    color:#888;
+}
+
+.glitch{
+    animation:glitch .15s infinite;
+}
+
+@keyframes glitch{
+    0%{transform:translate(1px,0);}
+    25%{transform:translate(-1px,1px);}
+    50%{transform:translate(1px,-1px);}
+    75%{transform:translate(-1px,0);}
+    100%{transform:translate(0);}
+}
